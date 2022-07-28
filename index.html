@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-play.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Kodchasan:wght@400;500;700&family=Meera+Inimai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Playstation Show</title>
+</head>
+<body id="body">
+    <header id="header">
+        <a id="btn-menu" href="" class="btn-menu" onclick="toggleMenu()">
+            <img src="./images/menu.png" alt="">
+        </a>
+
+        <img id="logo-play" src="./images/playstation-logo.png" alt="">
+
+        <nav id="nav">
+            <ul id="menu">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Profile</a>               
+            </ul>
+            <a href="" id="btn-cart">
+                <img src="./images/shopping-cart.png" alt="">
+            </a>
+        </nav>
+        
+    </header>
+
+    <main id="content-body">
+        <div id="market">
+            <p id="title">
+                DualSense <br/> Wireless Controller
+            </p>
+            <p id="price">
+                US$69.99
+            </p>
+    
+            <p id="description">
+                Brighten up your PS5 gaming nights with this modern controller, 
+                featuring two subtly different shades of black.
+            </p>
+
+            <button href="" id="button-add-cart">ADD TO CART</button>
+        </div>
+
+        <div id="illustrious">
+            <!-- ANGLES FROM CONTROLLER-->
+            <div class="angle-product-controller">
+                <div class="strokes strokcontroller selectangle" onclick="imgController()"></div>
+                <div class="strokes " onclick="imgControllerTwo()"></div>
+                <div class="strokes " onclick="imgControllerThree()"></div>
+            </div>
+            <!-- ANGLES FROM HEADSET-->
+            <div class="angle-product-hset none">
+                <div class="strokes headone selectangle" onclick="imghSet()"></div>
+                <div class="strokes headtwo " onclick="imghSetWhiteTwo()"></div>
+                <div class="strokes " onclick="imghSetWhiteThree()"></div>
+            </div>
+            <!-- ANGLES FROM CAMERA-->
+            <div class="angle-product-camera none">
+                <div class="strokes selectangle" onclick="imgCamera()"></div>
+            </div>
+            <!-- IMAGE FROM PRODUCTS-->
+            <div class="container-img">
+                <img onclick="tamanho()" id="img-product" src="./images/dualsense-controller-white.png" alt="">
+            </div>
+            <!-- COLORS FROM CONTROLLERS-->
+            <div class="colors-product-controller">
+                <div class="ball white selectcolor" onclick="controllerwhite()"></div>
+                <div class="ball black" onclick="controllerblack()" ></div>
+                <div class="ball shock" onclick="controllershock()" ></div>
+                <div class="ball blue" onclick="controllerblue()" ></div>
+                <div class="ball pink" onclick="controllerpink()" ></div>
+                <div class="ball purple" onclick="controllerpurple()" ></div>
+            </div>
+            <!-- COLORS FROM HEADSETS ANGLE 1-->
+            <div class="colors-headset-angle1 none" >
+                <div class="ball whiteh selectcolor" onclick="imghSetWhite()"></div>
+                <div class="ball blackh" onclick="imghSetBlack()"></div>
+            </div>
+            <!-- COLORS FROM HEADSETS ANGLE 2-->
+            <div class="colors-headset-angle2 none" >
+                <div class="ball whiteh2 selectcolor" onclick="imghSetWhiteTwo()"></div>
+                <div class="ball blackh2" onclick="imghSetBlackTwo()"></div>
+            </div>
+            <!-- COLORS FROM CAMERA-->
+            <div class="colors-product-camera none" >
+                <div class="ball whitec selectcolor"></div>
+            </div>
+        </div>      
+    </main>
+
+    <footer id="footer">
+        <!-- SHOW CONTROLLER-->
+        <div class="change-product controller selectchange" onclick="imgController()"></div>
+        <!-- SHOW HEADSET-->
+        <div class="change-product headset" onclick="imghSet()"></div>
+        <!-- SHOW CAMERA-->
+        <div class="change-product camera" onclick="imgCamera()"></div>
+        
+        <!-- Scripts functions-->
+        <script src="./actives.js"></script>
+        <script src="./imgProduct.js"></script>
+        <script src="./productAngle.js"></script>
+        <script src="./productColors.js"></script>
+    </footer>
+    
+</body>
+</html>
