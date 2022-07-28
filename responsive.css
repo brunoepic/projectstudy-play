@@ -1,0 +1,296 @@
+@media(max-width: 1520px){
+    #img-product{
+        transition: all .3s;
+        width: 24rem !important;
+    }
+
+    #title{
+        transition: all .3s;
+        font-size: 54px;
+    }
+
+    #price{
+        transition: all .3s;
+        font-size: 20px;
+        width: 36rem;
+    }
+
+    #description{
+        transition: all .3s;
+        font-size: 18px;
+        width: 36rem;
+    }
+
+    #button-add-cart{
+        font-size: 18px;
+    }
+
+    #footer{
+        margin-top: 13rem;
+    }
+}
+
+@media(max-width: 1380px){
+    
+    #market{
+        width: 32rem;
+    }
+
+    #title{
+        transition: all .3s;
+        width: 32rem;
+        font-size: 44px;
+    }
+
+    #description{
+        transition: all .3s;
+        width: 32rem;
+    }
+
+    #header{
+        transition: all .3s;
+        padding: 0 2rem;
+    }
+
+    #content-body{
+        transition: all .3s;
+        padding: 0 2rem;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #menu a{
+        color: #fff;
+    }
+
+    .active{
+        display: block;
+    }
+
+    #header{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+                            "btn-menu btn-cart"
+                            "logo-play btn-cart";
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #btn-menu{
+        grid-area: btn-menu;
+        display: block;
+        transition: all .3s;
+        position: absolute;
+        top: 2rem;
+    }
+
+    #btn-cart{
+        grid-area: btn-cart;
+        justify-content: end;
+        display: flex;
+        position: absolute;
+        right: 1.5rem;
+        top: 2rem;
+    }
+
+    #logo-play{
+        grid-area: logo-play;
+    }
+
+    #footer{
+        margin-top: 13rem;
+    }
+}
+
+@media(max-width: 1040px){
+    body{
+        background-image: url(./images/responsive.png);
+        height: 100%;
+        background-position: 30% 70%;
+        transition: all .7s;
+    }
+
+    #content-body{
+        display: block;
+        padding: 0 1.5rem;
+    }
+
+    #header{
+        transition: all .3s;
+        padding: 0 1.5rem;
+    }
+
+    #logo-play{
+        width: 10rem;
+    }
+
+    #market{
+        margin-top: 0;
+        height: 21rem;
+    }
+
+    #title{
+        transition: all .3s;
+        width: 32rem;
+        font-size: 40px;
+    }
+
+    #description{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 18px;
+    }
+
+    #button-add-cart{
+        font-size: 16px;
+    }
+
+    #illustrious{
+        margin-top: 6rem !important;
+        display: flex;
+        justify-content: space-around !important;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    #illustrious{
+        margin-top: 8rem;
+        justify-content: space-between;
+    }
+
+    #footer{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 580px){
+    
+    html, body{
+        min-height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    body{
+        background-image: url(./images/responsive.png);
+        height: 100% !important;
+        background-position-x: center;
+        background-position-y: center;
+        transition: all .7s;
+        width: 100% !important;
+    }
+
+    #logo-play{
+        width: 8rem;
+    }
+
+    #content-body{
+        transition: all .3s;
+        padding: 0 1.5rem;
+    }
+
+    #illustrious{
+        height: 14.2rem;
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
+    }
+
+    #img-product{
+        transition: all .3s;
+        max-width: 15rem !important;
+    }
+
+    #market{
+        height: 100%;
+        max-width: 100%;
+    }
+
+    #title{
+        transition: all .3s;
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+    #price{
+        font-size: 18px;
+    }
+
+    #description{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .colors-product-controller{
+        justify-items: end;
+    }
+
+    .colors-headset-angle1{
+        justify-items: end;
+    }
+
+    .colors-headset-angle2{
+        justify-items: end;
+    }
+
+    .colors-product-camera{
+        justify-items: end;
+    }
+
+    .angle-product-controller{
+        justify-items: start;
+    }
+    
+    .angle-product-hset{
+        justify-items: start;
+    }
+    
+    .angle-product-camera{
+        justify-items: start;
+    }
+
+    .ball{
+        height: 12px;
+        width: 12px;
+        margin-bottom: 1.4rem;
+    }
+
+    .ball.selectcolor{
+        height: 16px;
+        width: 16px;
+    }
+
+    .strokes{
+        width: 3px;
+        height: 32px;
+        margin-bottom: 14px;
+    }
+    .selectangle{
+        height: 56px;
+        background: #114A5C;
+    }
+
+    .change-product{
+        height: 3px;
+        width: 32px;
+        margin-right: 10px;
+    }
+
+    .selectchange{
+        width: 56px;
+        background: #114A5C;
+    }
+
+    #footer{
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 3rem;
+        
+    }
+}
